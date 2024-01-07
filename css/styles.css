@@ -107,7 +107,7 @@ nav {
 .mobile-nav {
     position: fixed;
     top: 0;
-    right: -300px; /* Posición inicial del menú fuera de la pantalla */
+    right: -300px; 
     width: 250px;
     height: 100%;
     background-color: #fff;
@@ -130,6 +130,10 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.mobile-nav a:hover {
+    color: var(--primary-color);
 }
 
 @media (max-width: 1024px) {
@@ -161,6 +165,14 @@ nav {
 
     .mobile-nav.active {
         right: 0; 
+    }
+
+    .mobile-nav h1 {
+        margin-bottom: 3rem;
+    }
+
+    .mobile-nav ul {
+        margin-bottom: 2rem;
     }
 }
 
