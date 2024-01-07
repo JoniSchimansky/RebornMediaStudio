@@ -41,6 +41,24 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+    const primaryBtnLinks = document.querySelectorAll('.primary-btn.smooth-scroll');
+
+    primaryBtnLinks.forEach(function(btnLink) {
+        btnLink.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const targetId = this.parentElement.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 });
+
 
 
