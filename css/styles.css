@@ -31,14 +31,18 @@ a {
     color: var(--primary-color);
 }
 
+.secondary-text {
+    color: var(--secondary-text-color);
+}
+
 nav {
-    max-width: 1200px;
+    max-width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
 }
 
 .nav-links {
@@ -87,4 +91,54 @@ nav {
 
 .primary-btn:hover {
     background-color: var(--secondary-color);
+}
+
+.container  {
+    max-width: 70%;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+/* Header section */
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content p {
+    margin-bottom: 3rem;
+}
+
+header .header-image {
+    position: relative;
+}
+
+header .header-image::before {
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .header-image img {
+    max-width: 600px;
+    margin: auto;
 }
