@@ -6,7 +6,8 @@
     --cards-background: #010f3a;
     --text-color: #ffffff;
     --secondary-text-color: #b6b8be;
-    --cards-hover: #323232;
+    /* --cards-hover: #323232; */
+    --cards-hover: #0a0f4f;
 }
 
 * {
