@@ -186,7 +186,7 @@ nav {
 .sub-title {
     color: var(--secondary-text-color);
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .purple-title {
@@ -259,7 +259,7 @@ header .header-image img {
 }
 
 .card h4 {
-    margin-bottom:  0.5rem;
+    margin-bottom: 1rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
@@ -312,6 +312,19 @@ header .header-image img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+
+#sub-price {
+    font-size: 1.5em;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--primary-color) ;
+    margin-top: 4em;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: 700;
 }
 
 /* Media queries */
