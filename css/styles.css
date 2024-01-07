@@ -1,6 +1,6 @@
 :root {
     --primary-color: #7d2cdc;
-    --secondary-color: #b86fcd;
+    --secondary-color: #5757cf;
     --terciary-color: #7dcdb8;
     --background-color: #00071c;
     --cards-background: #010f3a;
@@ -20,4 +20,71 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: 'Preahvihear', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 3rem 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.link a:hover {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.primary-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-color);
 }
