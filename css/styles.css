@@ -418,11 +418,20 @@ header .header-image img {
     .manteniment {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .faqs-container {
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 768px) {
     .services,
     .manteniment{
         grid-template-columns: 1fr;
+    }
+
+    .faqs-container {
+        width: 100%;
     }
 }
