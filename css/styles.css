@@ -347,6 +347,10 @@ header .header-image img {
     overflow: hidden;
 }
 
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
 .question {
     display: flex;
     justify-content: space-between;
@@ -386,8 +390,6 @@ header .header-image img {
 .rotate-icon {
     transform: rotate(45deg);
 }
-
-
 
 /* Media queries */
 @media (max-width: 1200px) {
