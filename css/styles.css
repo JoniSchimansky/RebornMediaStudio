@@ -412,6 +412,61 @@ header .header-image img {
     transform: rotate(45deg);
 }
 
+/* Contact section */
+.contact {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 60%;
+    background-color: var(--faqs-background);
+    padding: 20px;
+}
+
+.contact-form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--cards-background);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 12px);
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
 /* Media queries */
 @media (max-width: 1200px) {
     header {
