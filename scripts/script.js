@@ -118,12 +118,13 @@ closeButtons.forEach(button => {
 });
 
 showModalBtn1.addEventListener('click', function() {
-    scrollTop = window.scrollY || document.documentElement.scrollTop;
+    scrollTop = window.scrollY || document.documentElement.scrollTop; //Avoid back to top when closing modal
     modal1.style.display = 'block';
 });
 
 showModalBtn2.addEventListener('click', function() {
     scrollTop = window.scrollY || document.documentElement.scrollTop; 
+    modal2.style.display = 'block';
 });
 
 
