@@ -238,6 +238,12 @@ header .header-image img {
 }
 
 /* Services section */
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 120px #7d2cdc;
+    z-index: -100;
+}
+
 .services {
     margin-top: 4rem;
     display: grid;
