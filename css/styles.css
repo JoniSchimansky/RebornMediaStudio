@@ -29,6 +29,11 @@ a {
     color: var(--text-color);
 }
 
+#logo {
+    width: 200px;
+    height: auto;
+}
+
 .primary-text {
     color: var(--primary-color);
 }
