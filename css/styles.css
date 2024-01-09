@@ -540,7 +540,10 @@ button:hover {
     .faqs-container {
         width: 100%;
     }
-    
+
+    .form-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -550,6 +553,10 @@ button:hover {
     }
 
     .faqs-container {
+        width: 100%;
+    }
+
+    .form-container {
         width: 100%;
     }
 }
