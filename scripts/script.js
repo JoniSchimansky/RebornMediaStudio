@@ -72,6 +72,29 @@ document.querySelectorAll('.question').forEach((question) => {
 // Year
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
+// Back to top
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top-btn").classList.add("show");
+    } else {
+        document.getElementById("back-to-top-btn").classList.remove("show");
+    }
+}
+
+function scrollToTop() {
+    const scrollToTopBtn = document.documentElement;
+
+    scrollToTopBtn.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+
 
 
 

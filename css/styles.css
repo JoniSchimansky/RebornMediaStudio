@@ -476,6 +476,31 @@ textarea {
     background-color: var(--secondary-color);
 }
 
+/* Back to top */
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#back-to-top-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+#back-to-top-btn.show {
+    display: block;
+}
+
 /* Footer */
 .footer {
     background-color: var(--background-color);
