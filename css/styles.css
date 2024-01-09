@@ -311,7 +311,7 @@ header .header-image img {
     background-image: url(/images/purple-background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center right;
 } 
 
 .manteniment {
