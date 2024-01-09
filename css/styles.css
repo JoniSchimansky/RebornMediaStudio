@@ -307,6 +307,13 @@ header .header-image img {
 }
 
 /* Manteniment section */
+.manteniment-background{
+    background-image: url(/images/purple-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+} 
+
 .manteniment {
     margin-top: 4rem;
     display: grid;
