@@ -60,5 +60,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// FAQs
+document.querySelectorAll('.question').forEach((question) => {
+    question.addEventListener('click', () => {
+        const icon = question.querySelector('.toggle-icon');
+        question.parentElement.classList.toggle('show-answer');
+        icon.classList.toggle('rotate-icon');
+    });
+});
+
 
 
