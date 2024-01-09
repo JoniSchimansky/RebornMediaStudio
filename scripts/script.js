@@ -106,20 +106,29 @@ const modals = [modal1, modal2];
 
 const closeButtons = document.querySelectorAll(".close");
 
+let scrollTop = 0;
+
 closeButtons.forEach(button => {
     button.addEventListener('click', function() {
         const modal = button.closest('.modal');
         modal.style.display = "none";
+        document.body.style.overflow = '';
+        window.scrollTo(0, scrollTop); 
     });
 });
 
 showModalBtn1.addEventListener('click', function() {
+    scrollTop = window.scrollY || document.documentElement.scrollTop;
     modal1.style.display = 'block';
 });
 
 showModalBtn2.addEventListener('click', function() {
-    modal2.style.display = 'block';
+    scrollTop = window.scrollY || document.documentElement.scrollTop; 
 });
+
+
+
+
 
 
 
