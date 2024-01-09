@@ -346,6 +346,79 @@ header .header-image img {
     font-weight: 700;
 }
 
+/* Info popups */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0); 
+    backdrop-filter: blur(15px);
+}
+
+.modal-content {
+    background-color: #fefefee8;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 40%;
+    max-width: 500px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 220px;
+}
+
+.modal-text {
+    color: black;
+    position: absolute;
+    top: 50px;
+}
+
+#nextBtn {
+    position: absolute;
+    bottom: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#nextBtn:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+
 /* FAQs section */
 .faqs-background{
     background-image: url(/images/lines3.png);

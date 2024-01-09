@@ -1,3 +1,4 @@
+// Responsive menu
 document.addEventListener("DOMContentLoaded", function() {
     const responsiveMenu = document.querySelector('.responsive-menu');
     const mobileNav = document.querySelector('.mobile-nav');
@@ -94,7 +95,31 @@ function scrollToTop() {
     });
 }
 
+// Info popups
+const showModalBtn1 = document.getElementById('showModal1');
+const showModalBtn2 = document.getElementById('showModal2');
 
+const modal1 = document.getElementById('firstModal');
+const modal2 = document.getElementById('secondModal');
+
+const modals = [modal1, modal2];
+
+const closeButtons = document.querySelectorAll(".close");
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const modal = button.closest('.modal');
+        modal.style.display = "none";
+    });
+});
+
+showModalBtn1.addEventListener('click', function() {
+    modal1.style.display = 'block';
+});
+
+showModalBtn2.addEventListener('click', function() {
+    modal2.style.display = 'block';
+});
 
 
 
