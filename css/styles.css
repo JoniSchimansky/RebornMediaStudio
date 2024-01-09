@@ -459,7 +459,7 @@ textarea {
     font-weight: 700;
 }
 
-button {
+#form-btn {
     width: 100%;
     padding: 15px 12px;
     margin-top: 10px;
@@ -472,7 +472,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#form-btn:hover {
     background-color: var(--secondary-color);
 }
 
