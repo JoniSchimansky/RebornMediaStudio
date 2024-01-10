@@ -361,13 +361,12 @@ header .header-image img {
 }
 
 .modal-content {
-    background-color: #fefefee8;
+    background-color: var(--cards-background);
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height: 40%;
-    max-width: 500px;
+    height: 50%;
     position: relative;
     border-radius: 25px;
 }
@@ -381,22 +380,13 @@ header .header-image img {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
 }
 
-.modal-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    margin-left: 220px;
-}
-
 .modal-text {
-    color: black;
-    position: absolute;
-    top: 50px;
+    color: var(--text-color);
 }
 
 #nextBtn {
