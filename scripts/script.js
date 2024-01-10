@@ -96,13 +96,16 @@ function scrollToTop() {
 }
 
 // Info popups
-const showModalBtn1 = document.getElementById('showModal1');
-const showModalBtn2 = document.getElementById('showModal2');
+const showWordpressModalBtn = document.getElementById('showWordpressModal');
+const showEcommerceModalBtn = document.getElementById('showEcommerceModal');
+const showCustomModalBtn = document.getElementById('showCustomModal');
 
-const modal1 = document.getElementById('firstModal');
-const modal2 = document.getElementById('secondModal');
+const wordpressModal = document.getElementById('wordpressModal');
+const ecommerceModal = document.getElementById('ecommerceModal');
+const custoModal = document.getElementById('customModal');
 
-const modals = [modal1, modal2];
+
+const modals = [wordpressModal, ecommerceModal, custoModal];
 
 const closeButtons = document.querySelectorAll(".close");
 
@@ -117,14 +120,19 @@ closeButtons.forEach(button => {
     });
 });
 
-showModalBtn1.addEventListener('click', function() {
+showWordpressModalBtn.addEventListener('click', function() {
     scrollTop = window.scrollY || document.documentElement.scrollTop; //Avoid back to top when closing modal
-    modal1.style.display = 'block';
+    wordpressModal.style.display = 'block';
 });
 
-showModalBtn2.addEventListener('click', function() {
+showEcommerceModalBtn.addEventListener('click', function() {
     scrollTop = window.scrollY || document.documentElement.scrollTop; 
-    modal2.style.display = 'block';
+    ecommerceModal.style.display = 'block';
+});
+
+showCustomModalBtn.addEventListener('click', function() {
+    scrollTop = window.scrollY || document.documentElement.scrollTop; 
+    custoModal.style.display = 'block';
 });
 
 
