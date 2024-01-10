@@ -365,8 +365,8 @@ header .header-image img {
     margin: 10% auto;
     padding: 40px;
     border: 1px solid #888;
-    width: 80%;
-    height: 50%;
+    width: 55%;
+    height: 60%;
     position: relative;
     border-radius: 25px;
 }
@@ -404,25 +404,38 @@ header .header-image img {
     margin-right: 0.3rem;
 }
 
-#nextBtn {
-    position: absolute;
-    bottom: 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+.modal-columns {
+    display: flex;
 }
 
-#nextBtn:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    background-color: var(--secondary-color);
-    cursor: pointer;
+.modal-text {
+    flex: 1;
+    padding: 20px;
 }
 
+.modal-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 
 /* FAQs section */
 .faqs-background{
@@ -631,6 +644,10 @@ textarea {
 
     header .content p {
         margin-bottom: 2rem;
+    }
+
+    .modal-image {
+        display: none;
     }
 }
 
