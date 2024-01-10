@@ -363,7 +363,7 @@ header .header-image img {
 .modal-content {
     background-color: var(--cards-background);
     margin: 10% auto;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #888;
     width: 80%;
     height: 50%;
@@ -387,6 +387,21 @@ header .header-image img {
 
 .modal-text {
     color: var(--text-color);
+}
+
+.modal-text h4 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.modal-text h3 {
+    margin-bottom: 2em;
+}
+
+.modal p i {
+    color: var(--terciary-color);
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
 }
 
 #nextBtn {
