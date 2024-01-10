@@ -135,6 +135,17 @@ showCustomModalBtn.addEventListener('click', function() {
     custoModal.style.display = 'block';
 });
 
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+            window.scrollTo(0, scrollTop); 
+        }
+    });
+});
+
 
 
 
