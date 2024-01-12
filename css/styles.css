@@ -470,6 +470,21 @@ header .header-image img {
    width: 100%;
 }
 
+.modal-price {
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.modal-sub-price {
+    color: var(--secondary-text-color);
+}
+
+.contact-us {
+    color: var(--primary-color);
+    font-size: .8em;
+}
+
 /* FAQs section */
 .faqs-background{
     background-image: url(/images/lines3.png);
