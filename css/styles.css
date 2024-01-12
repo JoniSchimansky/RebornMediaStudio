@@ -369,6 +369,13 @@ header .header-image img {
     height: 60%;
     position: relative;
     border-radius: 25px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    -ms-overflow-style: none; 
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
 }
 
 .close {
@@ -383,10 +390,6 @@ header .header-image img {
     color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
-}
-
-.modal-text {
-    color: var(--text-color);
 }
 
 .modal-text h4 {
@@ -411,13 +414,14 @@ header .header-image img {
 .modal-text {
     flex: 1;
     padding: 20px;
+    color: var(--text-color);
+    overflow-y: auto;
 }
 
 .modal-image {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .circle-image {
@@ -437,6 +441,32 @@ header .header-image img {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+}
+
+.title-text {
+    font-size: 1.2em;
+}
+
+.sub-text {
+    color: var(--secondary-text-color);
+    margin-left: 30px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.modal-btn {
+    margin-top: 3rem;
+    text-align: center;
+    position: relative;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    width: 100%;
+}
+
+.modal-btn button {
+   width: 100%;
 }
 
 /* FAQs section */
