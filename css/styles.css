@@ -422,6 +422,7 @@ header .header-image img {
     flex: 1;
     display: flex;
     justify-content: center;
+    margin-top: 10em;
 }
 
 .circle-image {
@@ -710,5 +711,20 @@ textarea {
 
     .form-container {
         width: 100%;
+    }
+
+    .ri-checkbox-circle-line {
+        display: none;
+    }
+
+    .title-text {
+        font-size: 1em;
+        text-align: left;
+    }
+    
+    .sub-text { 
+        font-size: .8em;
+        margin-left: 0;
+        text-align: left;
     }
 }
