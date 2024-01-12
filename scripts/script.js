@@ -146,17 +146,6 @@ window.addEventListener('click', function(event) {
     });
 });
 
-// Close modal when clicking on price
-document.addEventListener('DOMContentLoaded', function () {
-    var closeModalLinks = document.getElementsByClassName('close-modal');
-
-    for (var i = 0; i < closeModalLinks.length; i++) {
-        closeModalLinks[i].addEventListener('click', function () {
-            var modal = document.querySelector('.modal');
-            modal.style.display = 'none';
-        });
-    }
-});
 
 
 
