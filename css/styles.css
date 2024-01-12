@@ -330,16 +330,6 @@ header .header-image img {
    margin-top: 1em;
 }
 
-.call-card-btn {
-    justify-content: center;
-    display: flex;
-}
-
-.call-card-btn button {
-   width: 100%;
-   margin-top: 1em;
-}
-
 /* Manteniment section */
 .manteniment-background{
     background-image: url(/images/purple-background.png);
@@ -636,6 +626,42 @@ textarea {
 
 #form-btn:hover {
     background-color: var(--secondary-color);
+}
+
+/* Book a call section */
+
+.call-card-btn {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-card-btn button {
+   width: 100%;
+   margin-top: 1em;
+}
+
+.email-contact {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.email-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-right: 0.5em;
+}
+
+#emailLink {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#emailLink:hover {
+    color: var(--secondary-color);
 }
 
 /* Back to top */
