@@ -330,6 +330,16 @@ header .header-image img {
    margin-top: 1em;
 }
 
+.call-card-btn {
+    justify-content: center;
+    display: flex;
+}
+
+.call-card-btn button {
+   width: 100%;
+   margin-top: 1em;
+}
+
 /* Manteniment section */
 .manteniment-background{
     background-image: url(/images/purple-background.png);
