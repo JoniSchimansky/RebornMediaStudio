@@ -508,7 +508,18 @@ header .header-image img {
     color: var(--secondary-text-color);
 }
 
+.sub-message {
+    font-size: .8em;
+    color: var(--secondary-text-color);
+    margin-bottom: 2em;
+}
+
 .contact-us {
+    color: var(--text-color);
+    font-size: .8em;
+}
+
+.contact-us:hover {
     color: var(--primary-color);
     font-size: .8em;
 }
