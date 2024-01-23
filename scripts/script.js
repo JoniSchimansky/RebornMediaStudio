@@ -99,13 +99,15 @@ function scrollToTop() {
 const showWordpressModalBtn = document.getElementById('showWordpressModal');
 const showEcommerceModalBtn = document.getElementById('showEcommerceModal');
 const showCustomModalBtn = document.getElementById('showCustomModal');
+const showAudioModalBtn = document.getElementById('showAudioModal');
 
 const wordpressModal = document.getElementById('wordpressModal');
 const ecommerceModal = document.getElementById('ecommerceModal');
-const custoModal = document.getElementById('customModal');
+const customModal = document.getElementById('customModal');
+const audioModal = document.getElementById('audioModal');
 
 
-const modals = [wordpressModal, ecommerceModal, custoModal];
+const modals = [wordpressModal, ecommerceModal, customModal];
 
 const closeButtons = document.querySelectorAll(".close");
 
@@ -132,7 +134,12 @@ showEcommerceModalBtn.addEventListener('click', function() {
 
 showCustomModalBtn.addEventListener('click', function() {
     scrollTop = window.scrollY || document.documentElement.scrollTop; 
-    custoModal.style.display = 'block';
+    customModal.style.display = 'block';
+});
+
+showAudioModalBtn.addEventListener('click', function() {
+    scrollTop = window.scrollY || document.documentElement.scrollTop; 
+    audioModal.style.display = 'block';
 });
 
 // Close modal when clicking outside
