@@ -102,6 +102,7 @@ const showCustomModalBtn = document.getElementById('showCustomModal');
 const showAudioModalBtn = document.getElementById('showAudioModal');
 const showWritingModal = document.getElementById('showWritingModal');
 const showMultimediaModal = document.getElementById('showMultimediaModal');
+const showSocialsModal = document.getElementById('showSocialsModal');
 
 const wordpressModal = document.getElementById('wordpressModal');
 const ecommerceModal = document.getElementById('ecommerceModal');
@@ -109,9 +110,10 @@ const customModal = document.getElementById('customModal');
 const audioModal = document.getElementById('audioModal');
 const writingModal = document.getElementById('writingModal');
 const multimediaModal = document.getElementById('multimediaModal');
+const socialsModal = document.getElementById('socialsModal');
 
 
-const modals = [wordpressModal, ecommerceModal, customModal, audioModal, writingModal, multimediaModal];
+const modals = [wordpressModal, ecommerceModal, customModal, audioModal, writingModal, multimediaModal, socialsModal];
 
 const closeButtons = document.querySelectorAll(".close");
 
@@ -154,6 +156,11 @@ showWritingModal.addEventListener('click', function() {
 showMultimediaModal.addEventListener('click', function() {
     scrollTop = window.scrollY || document.documentElement.scrollTop; 
     multimediaModal.style.display = 'block';
+});
+
+showSocialsModal.addEventListener('click', function() {
+    scrollTop = window.scrollY || document.documentElement.scrollTop; 
+    socialsModal.style.display = 'block';
 });
 
 // Close modal when clicking outside
