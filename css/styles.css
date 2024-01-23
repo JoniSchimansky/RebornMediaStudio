@@ -267,6 +267,12 @@ header .header-image img {
     z-index: -100;
 }
 
+.services-container  {
+    max-width: 80%;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
 .services {
     margin-top: 4rem;
     display: grid;
