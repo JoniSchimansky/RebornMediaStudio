@@ -107,7 +107,7 @@ const customModal = document.getElementById('customModal');
 const audioModal = document.getElementById('audioModal');
 
 
-const modals = [wordpressModal, ecommerceModal, customModal];
+const modals = [wordpressModal, ecommerceModal, customModal, audioModal];
 
 const closeButtons = document.querySelectorAll(".close");
 
