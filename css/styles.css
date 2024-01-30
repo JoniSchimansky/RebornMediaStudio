@@ -341,10 +341,10 @@ header .header-image img {
 
 /* Manteniment section */
 .manteniment-background{
-    background-image: url(/images/purple-background.png);
+    background-image: url(/images/gradient.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center left;
 } 
 
 .manteniment {
@@ -591,7 +591,7 @@ header .header-image img {
 
 /* Contact section */
 .contact-background {
-    background-image: url(/images/gradient.png);
+    background-image: url(/images/purple-background.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center left 20%;
