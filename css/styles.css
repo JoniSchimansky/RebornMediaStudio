@@ -241,20 +241,6 @@ header .header-image {
     margin-top: 2rem;
 }
 
-header .header-image::before {
-    content: "o";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 38rem;
-    font-weight: 400;
-    line-height: 20rem;
-    color: var(--primary-color);
-    opacity: 0.2;
-    z-index: -100;
-}
-
 header .header-image img {
     max-width: 100%;
 }
