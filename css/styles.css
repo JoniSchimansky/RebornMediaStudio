@@ -260,12 +260,12 @@ header .header-image img {
 }
 
 /* Services section */
-.blur {
-    position: absolute;
-    top: 110vh;
-    box-shadow: 0 0 1000px 120px #7d2cdc;
-    z-index: -100;
-}
+.gradient-background{
+    background-image: url(/images/gradient.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+} 
 
 .services-container  {
     max-width: 80%;
