@@ -260,9 +260,9 @@ header .header-image img {
 }
 
 /* Services section */
-.gradient-background{
-    background-image: url(/images/gradient.png);
-    background-size: contain;
+.services-background{
+    background-image: url(/images/secondary-backg.png); 
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: center left;
 } 
@@ -281,9 +281,10 @@ header .header-image img {
 }
 
 .card {
-    background-color: var(--cards-background);
+    background-image: linear-gradient(to top right, var(--cards-background) 40%, var(--secondary-color));
     padding: 1rem;
     border: 2px solid transparent;
+    border-color: var(--cards-background);
     border-radius: 15px;
     transition: all 0.3s ease;
 }
