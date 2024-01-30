@@ -36,9 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
+                smoothScrollTo(targetElement);
             }
         });
     });
@@ -53,14 +51,35 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
+                smoothScrollTo(targetElement);
             }
         });
     });
 });
 
+function smoothScrollTo(target) {
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, 1000);
+        window.scrollTo(0, run);
+        if (timeElapsed < 1000) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
 // FAQs
 document.querySelectorAll('.question').forEach((question) => {
     question.addEventListener('click', () => {
@@ -87,12 +106,26 @@ function scrollFunction() {
 }
 
 function scrollToTop() {
-    const scrollToTopBtn = document.documentElement;
+    const startPosition = window.pageYOffset;
+    const distance = -startPosition;
+    let startTime = null;
 
-    scrollToTopBtn.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, 1000);
+        window.scrollTo(0, run);
+        if (timeElapsed < 1000) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
 }
 
 // Info popups
