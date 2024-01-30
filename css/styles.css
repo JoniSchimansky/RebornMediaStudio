@@ -281,7 +281,7 @@ header .header-image img {
 }
 
 .card {
-    background-image: linear-gradient(to top right, var(--cards-background) 40%, var(--secondary-color));
+    background-image: linear-gradient(to top right, var(--faqs-background) 30%, var(--cards-hover));
     padding: 1rem;
     border: 2px solid transparent;
     border-color: var(--cards-background);
