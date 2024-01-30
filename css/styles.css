@@ -604,6 +604,13 @@ header .header-image img {
 }
 
 /* Contact section */
+.contact-background {
+    background-image: url(/images/gradient.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left 20%;
+}
+
 .contact {
     margin-top: 3em;
     display: flex;
@@ -612,7 +619,7 @@ header .header-image img {
 
 .form-container {
     width: 60%;
-    background-color: var(--faqs-background);
+    /* background-color: var(--faqs-background); */
     padding: 20px;
 }
 
