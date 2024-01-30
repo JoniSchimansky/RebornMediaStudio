@@ -299,6 +299,7 @@ header .header-image img {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .card p {
