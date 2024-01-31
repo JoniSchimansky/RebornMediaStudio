@@ -218,6 +218,8 @@ nav {
 /* Header section */
 .robot {
     height: 55vh;
+    position: relative;
+    margin-top: -150px;
 }
 
 header {
