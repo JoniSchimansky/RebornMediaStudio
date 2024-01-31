@@ -221,7 +221,6 @@ header {
     position: relative;
     padding-top: 2rem;
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 1fr minmax(auto, 600px);
     align-items: center;
     gap: 2rem;
@@ -809,9 +808,20 @@ textarea {
     .form-container {
         width: 100%;
     }
+
+    .robot {
+        display: flex;
+        margin-top: 20vh;
+        width: 120%;
+        left: 0%;
+    }
+    
+    .services-container{
+        margin-top: 300px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .services,
     .manteniment{
         grid-template-columns: 1fr;
@@ -833,7 +843,18 @@ textarea {
         font-size: 1em;
         text-align: left;
     }
+
+    .robot {
+        display: flex;
+        margin-top: 70vh;
+        width: 120%;
+        left: 0%;
+    }
     
+    .services-container{
+        margin-top: 300px;
+    }
+
     .sub-text { 
         font-size: .8em;
         margin-left: 0;
