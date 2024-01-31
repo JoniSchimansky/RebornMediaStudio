@@ -2,7 +2,8 @@
     --primary-color: #7d2cdc;
     --secondary-color: #5757cf;
     --terciary-color: #7dcdb8;
-    --background-color: #00071c;
+    /* --background-color: #00071c; */
+    --background-color: #000000;
     --cards-background: #010f3a;
     --text-color: #ffffff;
     --secondary-text-color: #b6b8be;
@@ -216,19 +217,34 @@ nav {
 }
 
 /* Header section */
-.robot {
-    height: 55vh;
-    position: relative;
-    margin-top: -150px;
-}
-
 header {
     position: relative;
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr minmax(auto, 600px);
     align-items: center;
     gap: 2rem;
+    background-color: transparent;
+}
+
+.robot {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: -1;
+}
+
+header .content .header-text {
+    z-index: 1;
+    background-color: transparent;
+}
+
+header content {
+    z-index: 1;
+    background-color: transparent;
 }
 
 header .content h1 {
