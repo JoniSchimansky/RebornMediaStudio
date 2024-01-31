@@ -372,6 +372,13 @@ header .header-image img {
     width: 90px;
 }
 
+.manteniment-card-icon {
+    position: absolute;
+    right: -40px;
+    top: 4%;
+    transform: translateY(-50%);
+}
+
 /* Manteniment section */
 .manteniment-background{
     background-image: url(/images/gradient.png);
