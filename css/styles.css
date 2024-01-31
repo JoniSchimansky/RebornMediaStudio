@@ -307,6 +307,7 @@ header .header-image img {
     font-size: 1.2rem;
     font-weight: 600;
     border-bottom: 2px solid var(--primary-color);
+    /* padding-left: 20px; */
 }
 
 .card p {
@@ -358,6 +359,17 @@ header .header-image img {
 .secondary-card-btn button {
    width: 100%;
    margin-top: 1em;
+}
+
+.card-icon {
+    position: absolute;
+    right: -25px;
+    top: 5%;
+    transform: translateY(-50%);
+}
+
+.card-icons {
+    width: 90px;
 }
 
 /* Manteniment section */
