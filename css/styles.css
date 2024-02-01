@@ -755,6 +755,11 @@ textarea {
     display: block;
 }
 
+/* Packs */
+.links {
+    color: var(--primary-color);
+}
+
 /* Footer */
 .footer {
     background-color: var(--background-color);
