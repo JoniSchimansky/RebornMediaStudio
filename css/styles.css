@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #7d2cdc;
+    --primary-color: #9028e1;
     --secondary-color: #5757cf;
     --terciary-color: #7dcdb8;
     /* --background-color: #00071c; */
@@ -781,7 +781,7 @@ textarea {
 }
 
 .footer-logo {
-    width: auto;
+    width: 200px;
     height: auto;
     margin-bottom: 5px;
 }
