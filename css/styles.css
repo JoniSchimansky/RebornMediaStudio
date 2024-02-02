@@ -1,8 +1,7 @@
 :root {
-    --primary-color: #7d2cdc;
+    --primary-color: #9028e1;
     --secondary-color: #5757cf;
     --terciary-color: #7dcdb8;
-    /* --background-color: #00071c; */
     --background-color: #000000;
     --cards-background: #010f3a;
     --text-color: #ffffff;
@@ -221,19 +220,18 @@ header {
     position: relative;
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 600px);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    background-color: transparent;
 }
 
-.robot {
-    height: 80vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 20%;
-    z-index: -1;
+header .header-image img {
+    max-width: 100%;
+}
+
+header .header-image {
+    position: relative;
+    margin-top: 2rem;
 }
 
 header .content .header-text {
@@ -255,15 +253,6 @@ header .content h1 {
 
 header .content p {
     margin-bottom: 3rem;
-}
-
-header .header-image {
-    position: relative;
-    margin-top: 2rem;
-}
-
-header .header-image img {
-    max-width: 100%;
 }
 
 /* Services section */
@@ -781,7 +770,7 @@ textarea {
 }
 
 .footer-logo {
-    width: auto;
+    width: 200px;
     height: auto;
     margin-bottom: 5px;
 }
@@ -800,8 +789,9 @@ textarea {
         text-align: center;
     }
 
-    .header-image {
-        display: none;
+    header {
+        grid-template-columns: 1fr; 
+        text-align: center; 
     }
 
     header .content h1 {
@@ -832,17 +822,6 @@ textarea {
     .form-container {
         width: 100%;
     }
-
-    .robot {
-        display: flex;
-        margin-top: 20vh;
-        width: 120%;
-        left: 0%;
-    }
-    
-    .services-container{
-        margin-top: 300px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -866,17 +845,6 @@ textarea {
     .title-text {
         font-size: 1em;
         text-align: left;
-    }
-
-    .robot {
-        display: flex;
-        margin-top: 70vh;
-        width: 120%;
-        left: 0%;
-    }
-    
-    .services-container{
-        margin-top: 300px;
     }
 
     .sub-text { 
