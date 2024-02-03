@@ -759,7 +759,6 @@ textarea {
 
 .project {
     border: 1px solid transparent;
-    padding: 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -791,6 +790,7 @@ textarea {
     transform: scale(0.9);
     opacity: 0.2; 
     transition: opacity 0.7s ease;
+    padding: 20px;
 }
 
 .project-info {
