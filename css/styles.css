@@ -751,7 +751,6 @@ textarea {
 
 /* Projects */
 .projects-background{
-    background-image: url(/images/small_background_blue.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -796,6 +795,7 @@ textarea {
 .project:hover img {
     opacity: 0.2; 
     transition: opacity 0.7s ease;
+    filter: brightness(70%);
 }
 
 .project-info {
